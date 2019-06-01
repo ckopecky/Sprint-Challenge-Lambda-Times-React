@@ -238,23 +238,23 @@ body {
   margin-bottom: 16px;
   padding: 24px;
 }
-.cards-container .card .headline {
+.headline {
   font-size: 25px;
-  font-family: Didot, serif;
+  font-family: 'Didot', serif;
 }
-.cards-container .card .author {
+.author {
   display: flex;
   justify-content: none;
   align-items: center;
   flex-direction: row;
   margin-top: 15px;
 }
-.cards-container .card .author .img-container {
+.img-container {
   padding-right: 10px;
   border-right: 1px solid lightgrey;
   height: 40px;
 }
-.cards-container .card .author .img-container img {
+.img-container img {
   width: 40px;
 }
 .cards-container .card .author span {
@@ -263,6 +263,21 @@ body {
   letter-spacing: 1px;
   font-weight: bold;
 }
+
+.inline {
+  display: inline;
+  margin: 10px;
+}
+
+.none {
+  display: none;
+  margin: 10px;
+}
+
+.small {
+  width: 380px;
+}
+
 .carousel {
   width: 100%;
   display: flex;
