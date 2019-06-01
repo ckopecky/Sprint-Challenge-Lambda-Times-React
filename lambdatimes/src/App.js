@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="App">
       <TopBar />
-      <Header />
+      <Header date={getDateString}/>
       <Content />
     </div>
   );
