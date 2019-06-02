@@ -13,7 +13,21 @@ export default class Carousel extends Component {
   }
 
   leftClick = () => {
+    console.log("clicked")
+    for (let i = 0; i < this.state.carouselImg.length; i++) {
+      console.log(this.state.selectedImg[i]);
+      if (this.state.selectedImg === this.state.carouselImg[i]) {
+        if(i === 0) {
+          this.setState({selectedImg: this.state.carouselImg[this.state.carouselImg.length - 1] })
+          console.log(this.state.selectedImg)
+        }
+        else {
+          this.setState({selectedImg: this.state.carouselImg[i - 1]});
+          console.log(this.state.selectedImg)
 
+  }
+      }
+    }
   }
 
   rightClick = () => {
