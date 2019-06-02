@@ -82,7 +82,7 @@ export default class Carousel extends Component {
           this.setState({selectedImg: this.state.carouselImg[i - 1]});
           console.log(this.state.selectedImg)
 
-  }
+        }
       }
     }
   }
