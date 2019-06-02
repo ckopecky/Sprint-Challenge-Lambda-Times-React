@@ -12,7 +12,9 @@ const TopBarComponent = styled.div`
   flex-direction: row;
   position: fixed;
   height: 44px;
+  top: 0;
   background-color: #333;
+  z-index: 2
   > div {
     width: 100%;
     display: flex;
