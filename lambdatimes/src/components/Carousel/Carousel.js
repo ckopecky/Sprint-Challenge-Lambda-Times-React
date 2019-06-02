@@ -17,7 +17,17 @@ export default class Carousel extends Component {
   }
 
   rightClick = () => {
-
+    console.log(this.state.selectedImg)
+    for (let i = 0; i < this.state.carouselImg.length; i++) {
+      if (this.state.selectedImg === this.state.carouselImg[i]) {
+        if(i === this.state.carouselImg.length - 1) {
+          this.setState({selectedImg: this.state.carouselImg[0] })
+        } 
+        else {
+          this.setState({selectedImg: this.state.carouselImg[i + 1]});
+        }
+      }
+    }
   }
 
   selectedImage = () => {
