@@ -9,7 +9,7 @@ export default class Carousel extends Component {
     }
   }
   componentDidMount(){
-
+    this.setState({carouselImg: carouselData, selectedImg: carouselData[0]});
   }
 
   leftClick = () => {
