@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import TopBar from './components/TopBar';
 import Header from './components/Header';
 import Content from './components/Content/Content';
+import Carousel from './components/Carousel/Carousel';
 
 const AppWrapper = styled.div`
   display: flex;
@@ -23,6 +24,7 @@ const App = () => {
     <AppWrapper>
       <TopBar />
       <Header date={getDateString}/>
+      <Carousel />
       <Content />
     </AppWrapper>
   );
