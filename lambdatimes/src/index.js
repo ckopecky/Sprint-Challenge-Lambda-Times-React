@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import App from './App';
 
-const WrapperComponent = styled.body`
+const WrapperComponent = styled.div`
     margin: 0;
     padding: 0;
     width: 100%;
