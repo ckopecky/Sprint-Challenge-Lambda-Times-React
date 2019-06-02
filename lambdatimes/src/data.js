@@ -1,5 +1,11 @@
 /* Do not change anything in this file until you are completed with the assignment 
    and have moved onto the stretch goals. */
+import one from "./components/Carousel/one.jpg";
+import two from "./components/Carousel/two.jpg";
+import three from "./components/Carousel/three.jpg";
+import four from "./components/Carousel/four.jpg";
+
+
 
 export const tabData = ['all', 'javascript', 'technology', 'node', 'React.js', 'bootstrap'];
 
@@ -97,8 +103,8 @@ export const cardData = [
 ]
 
 export const carouselData = [
-  "./assets/carousel/mountains.jpeg",
-  "./assets/carousel/computer.jpeg",
-  "./assets/carousel/trees.jpeg",
-  "./assets/carousel/turntable.jpeg"
+  {image: one, alt:"stockImg1"},
+  {image: two, alt:"stockImg2"},
+  {image: three, alt:"stockImg3"},
+  {image: four, alt:"stockImg4"}
 ]
