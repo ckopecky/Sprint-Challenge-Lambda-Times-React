@@ -50,10 +50,11 @@ export default class Carousel extends Component {
   
   render(){
     return (
-      <div className="carousel">
-        <div className="left-button" onClick={this.leftClick}>{"<"}</div>
-        <div className="right-button" onClick={this.rightClick}>{">"}</div>
-      </div>
+      <StyledCarousel>
+        <div onClick={this.leftClick}>{"<"}</div>
+          {this.selectedImage()}
+        <div onClick={this.rightClick}>{">"}</div>
+      </StyledCarousel>
     )
   }
 }
